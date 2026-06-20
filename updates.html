@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updates | Azore Technologies Limited</title>
+<meta name="description" content="Latest news, announcements, and updates from Azore Technologies Limited — Dodoma, Tanzania.">
+<link rel="stylesheet" href="azore-styles-v2.css">
+<style>
+  .update-card{
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 26px;
+    margin-bottom: 18px;
+  }
+  .update-card img{
+    width:100%; max-height:320px; object-fit:cover;
+    border-radius: 8px; margin-bottom:16px;
+  }
+  .update-date{
+    font-family: var(--font-mono); font-size:0.74rem;
+    letter-spacing:0.06em; text-transform:uppercase;
+    color: var(--red-deep); margin-bottom:8px; display:block;
+  }
+  .update-body{ display:none; margin-top:12px; }
+  .update-body.open{ display:block; }
+  .read-more{
+    background:none; border:none; color: var(--blue-bright);
+    font-weight:600; font-size:0.88rem; cursor:pointer; padding:0; margin-top:10px;
+  }
+  #updates-empty, #updates-error{ color: var(--muted); font-size:0.95rem; }
+  #updates-loading{ color: var(--muted); font-size:0.95rem; }
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>SYSTEMS: SECURE</span>
+    <span>HQ: DODOMA, TANZANIA</span>
+    <span>SUPPORT: CALL / WHATSAPP 0752 240 034</span>
+    <span>PRACTICES: IT EQUIPMENT · CYBERSECURITY · AI SYSTEMS</span>
+    <span>SYSTEMS: SECURE</span>
+    <span>HQ: DODOMA, TANZANIA</span>
+    <span>SUPPORT: CALL / WHATSAPP 0752 240 034</span>
+    <span>PRACTICES: IT EQUIPMENT · CYBERSECURITY · AI SYSTEMS</span>
+  </div>
+</div>
+
+<header class="site">
+  <nav class="wrap nav">
+    <a href="index.html" class="brand">
+      <img src="logo.svg" alt="Azore Technologies Limited" class="brand__logo">
+    </a>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="updates.html" class="active">Updates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://wa.me/255752240034" class="btn btn--primary">Call / WhatsApp</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B1220" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb">HOME / UPDATES</p>
+      <p class="eyebrow">News &amp; announcements</p>
+      <h1>What's new at Azore.</h1>
+      <p>Service updates, new offerings, and announcements from our team in Dodoma.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="max-width:760px;">
+      <p id="updates-loading">Loading updates…</p>
+      <p id="updates-empty" style="display:none;">No updates posted yet — check back soon.</p>
+      <p id="updates-error" style="display:none;">Updates couldn't be loaded right now. Please refresh the page.</p>
+      <div id="updates-list"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand brand--footer" style="margin-bottom:14px;">
+          <span class="brand__plate"><img src="logo.svg" alt="Azore Technologies Limited" class="brand__logo"></span>
+        </div>
+        <p>Your IT specialist in Dodoma — IT equipment, cybersecurity, and AI systems for businesses across Tanzania.</p>
+        <div class="social-row" style="margin-top:18px;">
+          <a href="https://instagram.com/azoretechtz" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="#C9D6EC" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.tiktok.com/@azoretechtz" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="#C9D6EC" stroke-width="1.8"><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.3 2 2 3.5 4 3.7"/></svg></a>
+          <a href="https://www.facebook.com/Azoretechnologies" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="#C9D6EC" stroke-width="1.8"><path d="M15 8h-2a2 2 0 0 0-2 2v2H9v3h2v6h3v-6h2.2l.8-3H14v-1.5a1 1 0 0 1 1-1H16V8z"/></svg></a>
+          <a href="https://www.linkedin.com/in/joycemasamalo" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="#C9D6EC" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="7" y1="10" x2="7" y2="16"/><circle cx="7" cy="7" r="0.6" fill="#C9D6EC"/><path d="M11 16v-4a2 2 0 0 1 4 0v4"/><line x1="11" y1="10" x2="11" y2="16"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#equipment">IT Equipment</a></li>
+          <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+          <li><a href="services.html#ai">AI Systems</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:azoretechnologiesltd@gmail.com">azoretechnologiesltd@gmail.com</a></li>
+          <li><a href="tel:+255752240034">0752 240 034</a></li>
+          <li><span style="color:#9FAEC9;">Dodoma, Tanzania</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Azore Technologies Limited. All rights reserved.</span>
+      <span>Built in Dodoma, Tanzania</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  fetch('updates.json?_=' + Date.now())
+    .then(r => { if (!r.ok) throw new Error('network'); return r.json(); })
+    .then(data => {
+      const posts = (data && Array.isArray(data.posts)) ? data.posts : [];
+      document.getElementById('updates-loading').style.display = 'none';
+      if (posts.length === 0) {
+        document.getElementById('updates-empty').style.display = 'block';
+        return;
+      }
+      posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+      const list = document.getElementById('updates-list');
+      posts.forEach((post, i) => {
+        const card = document.createElement('article');
+        card.className = 'update-card';
+        const dateStr = post.date ? new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+        card.innerHTML = `
+          ${post.image ? `<img src="${post.image}" alt="${post.title || ''}">` : ''}
+          <span class="update-date">${dateStr}</span>
+          <h3>${post.title || 'Untitled update'}</h3>
+          <p>${post.excerpt || ''}</p>
+          ${post.body ? `<div class="update-body" id="body-${i}"><p>${post.body}</p></div>
+          <button class="read-more" data-target="body-${i}">Read more</button>` : ''}
+        `;
+        list.appendChild(card);
+      });
+      list.querySelectorAll('.read-more').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const body = document.getElementById(btn.dataset.target);
+          const open = body.classList.toggle('open');
+          btn.textContent = open ? 'Show less' : 'Read more';
+        });
+      });
+    })
+    .catch(() => {
+      document.getElementById('updates-loading').style.display = 'none';
+      document.getElementById('updates-error').style.display = 'block';
+    });
+</script>
+</body>
+</html>
